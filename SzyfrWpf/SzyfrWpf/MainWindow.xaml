@@ -1,0 +1,26 @@
+﻿<Window x:Class="SzyfrWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SzyfrWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="LightBlue" >
+    <Grid>
+        <TextBlock Text="Podaj Wartosc Klucza" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Margin="30,35,0,0"/>
+        <TextBox x:Name="KeyTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="30" Margin="30,81,0,0" FontSize="16" TextChanged="KeyTextBox_TextChanged"/>
+
+        <TextBlock Text="Podaj Wartosc Klucza" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Margin="30,141,0,0"/>
+        <TextBox x:Name="MoverBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="204" Margin="30,191,0,0" FontSize="16" TextChanged="MoverTextBox_TextChanged"/>
+
+        <Button x:Name="GenerateKeyButton" Content="Generuj Klucz" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="40" Margin="313,0,0,0" FontSize="16" Click="GenerateKeyButton_Click"/>
+
+        <TextBlock Text="Tekst zaszyfrowany" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Margin="517,41,0,0"/>
+
+
+        <Label x:Name="Result" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="200" Margin="517,106,0,0" FontSize="16" Background="White"/>
+
+        <Button x:Name="SaveButton" Content="Zapisz szyfr w pliku" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="40" Margin="542,355,0,0" FontSize="16" Click="ZapiszClick"/>
+
+    </Grid>
+</Window>
